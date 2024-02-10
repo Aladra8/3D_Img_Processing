@@ -48,6 +48,7 @@ namespace sgm
       void aggregation();
       void calculate_cost_hamming();
       void compute_path_cost(int direction_y, int direction_x, int cur_y, int cur_x, int cur_path);
+      unsigned long findMin(unsigned long a , unsigned long b , unsigned long c);
 
       int height_;
       int width_;

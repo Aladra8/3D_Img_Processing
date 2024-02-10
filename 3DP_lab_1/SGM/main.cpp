@@ -28,13 +28,12 @@ int main(int argc, char** argv) {
 
     unsigned int disparityRange = atoi(argv[5]);
 
-
     sgm::SGM sgm(disparityRange);
     sgm.set(firstImage, secondImage);
     sgm.compute_disparity();
     sgm.save_disparity(outputFileName);
 
-    std::cerr<<"Right Image MSE error: "<<sgm.compute_mse(gt)<<std::endl;
+    std::cerr<< "Right Image MSE error: " << sgm.compute_mse(gt) << std::endl;
 
     return 0;
 }
